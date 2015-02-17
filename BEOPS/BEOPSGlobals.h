@@ -18,7 +18,8 @@ public:
 	static ArrayList^ arrIncomeNames;
 	static ArrayList^ arrExpenseNames;
 	static ArrayList^ arrExpenseCodes;
-
+	//TODO: Thoughts. i am going to have to write some code to check for the version
+	//of the data file and convert the old names to the new names or all will crash
 	static BEOPSGlobals(void)
 	{
 
@@ -30,33 +31,34 @@ public:
 		arrIncomeNames->Add("Operator Equity");
 
 		arrExpenseNames = gcnew ArrayList;
-		arrExpenseNames->Add("Supplies");
-		arrExpenseNames->Add("Janitorial");
-		arrExpenseNames->Add("Business License");
-		arrExpenseNames->Add("Telecommunications");
-		arrExpenseNames->Add("Uniforms");
-		arrExpenseNames->Add("Advertising");
-		arrExpenseNames->Add("Insurance");
-		arrExpenseNames->Add("Rent/Commision");
-		arrExpenseNames->Add("Storage");
-		arrExpenseNames->Add("Utilities");
-		arrExpenseNames->Add("FICA");
-		arrExpenseNames->Add("Workers Compensation");
-		arrExpenseNames->Add("Ohio Unemployment");
-		arrExpenseNames->Add("Federal Unemployment Tax");
-		arrExpenseNames->Add("Sales Tax");
-		arrExpenseNames->Add("Pre-approved Training");
-		arrExpenseNames->Add("Temporary Operator Fee");
-		arrExpenseNames->Add("Vehicle Expense");
-		arrExpenseNames->Add("Pre-Approved Miscellaneous");
-		arrExpenseNames->Add("Business Dues");
-		arrExpenseNames->Add("Professional Merchandise Delivery");
-		arrExpenseNames->Add("Pest Extermination Service");
-		arrExpenseNames->Add("Bookkeeping/Accounting");
-		arrExpenseNames->Add("Computer Related Expenses");
-		arrExpenseNames->Add("Air Conditioning, Filter, Fire, and Security");
-		arrExpenseNames->Add("Banking Fees");
-		arrExpenseNames->Add("Refunds");
+		arrExpenseNames->Add("A - Supplies");//arrExpenseNames->Add("Supplies");
+		arrExpenseNames->Add("B - Janitorial ODOT fee paid");//arrExpenseNames->Add("Janitorial");
+		arrExpenseNames->Add("C - Business Licenses");//arrExpenseNames->Add("Business License");
+		arrExpenseNames->Add("D - Telecommunication services / Business");//arrExpenseNames->Add("Telecommunications");
+		arrExpenseNames->Add("E - Cost of uniforms rented owned and laundry when used for business");//arrExpenseNames->Add("Uniforms");
+		arrExpenseNames->Add("F - Business Advertising / Promotional");//arrExpenseNames->Add("Advertising");
+		arrExpenseNames->Add("G - Insurance Premiums coverage for off-site storage");//arrExpenseNames->Add("Insurance");
+		arrExpenseNames->Add("H - Commision / Grantor rent");//arrExpenseNames->Add("Rent/Commision");
+		arrExpenseNames->Add("I - Expense for storage space");//arrExpenseNames->Add("Storage");
+		arrExpenseNames->Add("J - Utilities for facility when not included in rent");//arrExpenseNames->Add("Utilities");
+		arrExpenseNames->Add("K - Employer Contribution for Social Security (FICA)");//arrExpenseNames->Add("FICA");
+		arrExpenseNames->Add("L - Workers Compensation premiums (BWC)");//arrExpenseNames->Add("Workers Compensation");
+		arrExpenseNames->Add("M - Ohio Unemployment (SUTA)");//arrExpenseNames->Add("Ohio Unemployment");
+		arrExpenseNames->Add("N - Federal Unemployment Taxes (FUTA)");//arrExpenseNames->Add("Federal Unemployment Tax");
+		arrExpenseNames->Add("O - Ohio Sales Tax");//arrExpenseNames->Add("Sales Tax");
+		arrExpenseNames->Add("P - Pre-approved training expenses up to a $1000 limit per year");//arrExpenseNames->Add("Pre-approved Training");
+		arrExpenseNames->Add("Q - Temporary operator agreement fees");//arrExpenseNames->Add("Temporary Operator Fee");
+		//arrExpenseNames->Add("R - Vehicle expense report");//arrExpenseNames->Add("Vehicle Expense"); //This general Vehicle expense removed for 5.1
+		arrExpenseNames->Add("S - Pre-Approved Miscellaneous expense");//arrExpenseNames->Add("Pre-Approved Miscellaneous");
+		arrExpenseNames->Add("T - Business Dues");//arrExpenseNames->Add("Business Dues");
+		arrExpenseNames->Add("U - Professional Merchandise Delivery Service");//arrExpenseNames->Add("Professional Merchandise Delivery");
+		arrExpenseNames->Add("V - Pest Extermination Service");//arrExpenseNames->Add("Pest Extermination Service");
+		arrExpenseNames->Add("W - Bookkeeping / Accounting Services");//arrExpenseNames->Add("Bookkeeping/Accounting");
+		arrExpenseNames->Add("X - Computer and Computer Related Expenses");//arrExpenseNames->Add("Computer Related Expenses");
+		arrExpenseNames->Add("Y - Business Legal Fees (not associated with any adversarial procedures against OOD)");//Added in 5.1
+		arrExpenseNames->Add("Z - Air Conditioning, Filter, Fire, and Security");//arrExpenseNames->Add("Air Conditioning, Filter, Fire, and Security");
+		arrExpenseNames->Add("aa - Banking Fees");//arrExpenseNames->Add("Banking Fees");
+		arrExpenseNames->Add("bb - Documented refunds to customers");//arrExpenseNames->Add("Refunds");
 		arrExpenseNames->Add("Vehicle Gas");
 		arrExpenseNames->Add("Vehicle Parking and Tolls");
 		arrExpenseNames->Add("Vehicle Payment");
@@ -94,6 +96,7 @@ public:
 		arrExpenseCodes->Add("V");
 		arrExpenseCodes->Add("W");
 		arrExpenseCodes->Add("X");
+		arrExpenseCodes->Add("Y");//This is new in 5.1
 		arrExpenseCodes->Add("Z");
 		arrExpenseCodes->Add("AA");
 		arrExpenseCodes->Add("BB");

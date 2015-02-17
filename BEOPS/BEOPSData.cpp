@@ -13,7 +13,7 @@ BEOPSData::BEOPSData(void)
 {
 	strCurrentFileName = "";
 
-	dblVersionNumber = 5.0;
+	dblVersionNumber = 5.1;
 	strOperatorName = "";
 	strOperatorNumber = "";
 	strOperatorAddress1 = "";
