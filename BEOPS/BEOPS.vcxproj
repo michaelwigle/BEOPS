@@ -104,6 +104,8 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>
       </AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -126,6 +128,8 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>
       </AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -167,15 +171,33 @@
     <ClInclude Include="BEOPSInventory.h" />
     <ClInclude Include="Daily.h" />
     <ClInclude Include="Expense.h" />
-    <ClInclude Include="frmDaily.h" />
-    <ClInclude Include="frmInitialValues.h" />
-    <ClInclude Include="frmInventory.h" />
-    <ClInclude Include="frmMainMenu.h" />
-    <ClInclude Include="frmMethod1Input.h" />
-    <ClInclude Include="frmMethod2Input.h" />
-    <ClInclude Include="frmPrintWindow.h" />
-    <ClInclude Include="frmReports.h" />
-    <ClInclude Include="frmVehicleReportMenu.h" />
+    <ClInclude Include="frmDaily.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmInitialValues.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmInventory.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmMainMenu.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmMethod1Input.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmMethod2Input.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmPrintWindow.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmReports.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmVehicleReportMenu.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="Income.h" />
     <ClInclude Include="InitialValues.h" />
     <ClInclude Include="Inventory.h" />

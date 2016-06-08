@@ -5,10 +5,12 @@
 #include "frmReports.h"
 #include "BEOPSGlobals.h"
 
+
 using namespace BEOPS;
 
 [STAThreadAttribute]
 int main(array<System::String ^> ^args)
+
 {
 
 	// Enabling Windows XP visual effects before any controls are created
@@ -18,4 +20,5 @@ int main(array<System::String ^> ^args)
 	// Create the main window and run it
 	Application::Run(gcnew frmMainMenu());
 	return 0;
+
 }
